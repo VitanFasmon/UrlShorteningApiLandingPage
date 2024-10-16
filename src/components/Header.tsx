@@ -3,9 +3,9 @@ import deskImage from "../assets/images/illustration-working.svg";
 const Header = () => {
   const handleGetStartedOnClick = () => {};
   return (
-    <header className="flex justify-between items-center">
-      <div className="flex flex-col gap-8 items-start px-24">
-        <div>
+    <header className="flex justify-between items-center md:flex-row flex-col-reverse gap-8 md:gap-0">
+      <div className="flex flex-col gap-8 items-center md:items-start md:px-24 px-8">
+        <div className="flex flex-col gap-4  text-center md:text-start ">
           <h1 className="text-5xl font-bold text-primary-darkViolet font-poppins">
             More than just shorter links
           </h1>
@@ -18,7 +18,13 @@ const Header = () => {
           Get Started
         </Button>
       </div>
-      <img src={deskImage} alt="Desk image" />
+      <div>
+        <img
+          src={deskImage}
+          alt="Desk image"
+          className="md:h-full md:min-h-[300px] sm:h-[500px] h-auto object-cover object-left "
+        />
+      </div>
     </header>
   );
 };
