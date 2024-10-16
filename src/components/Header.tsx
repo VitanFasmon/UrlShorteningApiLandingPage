@@ -1,5 +1,5 @@
-import Button from "./Button";
 import deskImage from "../assets/images/illustration-working.svg";
+import Link from "./Link";
 const Header = () => {
   const handleGetStartedOnClick = () => {};
   return (
@@ -14,9 +14,9 @@ const Header = () => {
             links are performing.
           </p>
         </div>
-        <Button bgColor="primary" rounded onClick={handleGetStartedOnClick}>
+        <Link bgColor="primary" href="/get-started">
           Get Started
-        </Button>
+        </Link>
       </div>
       <div>
         <img

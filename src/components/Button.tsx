@@ -2,15 +2,9 @@ interface ButtonProps {
   children?: React.ReactNode;
   onClick: () => void;
   bgColor: "primary" | "secondary" | "none";
-  rounded: boolean;
 }
 
-const Button = ({
-  children,
-  onClick,
-  bgColor: color,
-  rounded,
-}: ButtonProps) => {
+const Button = ({ children, onClick, bgColor: color }: ButtonProps) => {
   return (
     <button
       className={`${
@@ -19,9 +13,7 @@ const Button = ({
           : color === "secondary"
           ? "bg-primary-darkViolet text-white"
           : " text-neutral-grayishViolet hover:text-primary-darkViolet transition-colors duration-300"
-      } ${
-        rounded ? "rounded-full" : "rounded"
-      } py-2 px-4 hover:bg-opacity-50 transition-colors duration-300 font-bold`}
+      }  py-2 px-4 hover:bg-opacity-50 transition-colors duration-300 font-bold rounded`}
       onClick={onClick}
     >
       {children}
