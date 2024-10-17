@@ -22,7 +22,7 @@ module.exports = {
           red: "hsl(0, 87%, 67%)",
         },
         neutral: {
-          lightGray: "hsl(0, 0%, 95%)",
+          lightGray: "#f0f0f7",
           gray: "hsl(0, 0%, 75%)",
           grayishViolet: "hsl(257, 7%, 63%)",
           veryDarkBlue: "hsl(255, 11%, 22%)",

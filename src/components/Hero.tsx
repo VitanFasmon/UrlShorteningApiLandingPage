@@ -7,7 +7,7 @@ import FullyCustomizableCardIcon from "../assets/icons/icon-fully-customizable.s
 const Hero = () => {
   return (
     <section className="bg-neutral-lightGray flex flex-col gap-8 items-center p-8">
-      <div>
+      <div className="mb-16">
         <LinkShortenForm />
         <ShowShortenedLinks />
       </div>

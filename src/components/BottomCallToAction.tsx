@@ -7,7 +7,7 @@ const BottomCallToAction = () => {
   const isMobile = useIsMobile();
   return (
     <section
-      className="flex flex-col items-center justify-center w-full h-[300px] bg-primary-darkViolet bg-cover bg-no-repeat gap-8"
+      className="flex flex-col items-center justify-center w-full h-[200px] bg-primary-darkViolet bg-cover bg-no-repeat gap-8"
       style={
         isMobile
           ? { backgroundImage: `url(${backgroundMobile})` }
