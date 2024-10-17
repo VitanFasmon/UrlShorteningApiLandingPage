@@ -20,7 +20,7 @@ const Footer = () => {
               <Link
                 bgColor="none"
                 href=""
-                className=" text-neutral-grayishViolet font-poppins"
+                className=" text-neutral-grayishViolet font-poppins pl-0"
               >
                 Link Shortening
               </Link>
@@ -29,7 +29,7 @@ const Footer = () => {
               <Link
                 bgColor="none"
                 href=""
-                className=" text-neutral-grayishViolet font-poppins"
+                className=" text-neutral-grayishViolet font-poppins pl-0"
               >
                 Branded Links
               </Link>
@@ -38,7 +38,7 @@ const Footer = () => {
               <Link
                 bgColor="none"
                 href=""
-                className=" text-neutral-grayishViolet font-poppins"
+                className=" text-neutral-grayishViolet font-poppins pl-0"
               >
                 Analytics
               </Link>
@@ -55,7 +55,7 @@ const Footer = () => {
               <Link
                 bgColor="none"
                 href=""
-                className=" text-neutral-grayishViolet font-poppins"
+                className=" text-neutral-grayishViolet font-poppins pl-0"
               >
                 Blog
               </Link>
@@ -64,7 +64,7 @@ const Footer = () => {
               <Link
                 bgColor="none"
                 href=""
-                className=" text-neutral-grayishViolet font-poppins"
+                className=" text-neutral-grayishViolet font-poppins pl-0"
               >
                 Developers
               </Link>
@@ -73,7 +73,7 @@ const Footer = () => {
               <Link
                 bgColor="none"
                 href=""
-                className=" text-neutral-grayishViolet font-poppins"
+                className=" text-neutral-grayishViolet font-poppins pl-0"
               >
                 Support
               </Link>
@@ -87,7 +87,7 @@ const Footer = () => {
               <Link
                 bgColor="none"
                 href=""
-                className=" text-neutral-grayishViolet font-poppins"
+                className=" text-neutral-grayishViolet font-poppins pl-0"
               >
                 About
               </Link>
@@ -96,7 +96,7 @@ const Footer = () => {
               <Link
                 bgColor="none"
                 href=""
-                className=" text-neutral-grayishViolet font-poppins"
+                className=" text-neutral-grayishViolet font-poppins pl-0"
               >
                 Our Team
               </Link>
@@ -105,7 +105,7 @@ const Footer = () => {
               <Link
                 bgColor="none"
                 href=""
-                className=" text-neutral-grayishViolet font-poppins"
+                className=" text-neutral-grayishViolet font-poppins pl-0"
               >
                 Careers
               </Link>
@@ -114,7 +114,7 @@ const Footer = () => {
               <Link
                 bgColor="none"
                 href=""
-                className=" text-neutral-grayishViolet font-poppins"
+                className=" text-neutral-grayishViolet font-poppins pl-0"
               >
                 Contact
               </Link>
