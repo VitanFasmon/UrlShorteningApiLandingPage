@@ -1,15 +1,13 @@
-import { ShortenedLink } from "../types/shortenedLink";
+import useLinksStore from "../store/useLinksStore";
+import { LinkGroup } from "../types/shortenedLink";
 import SingleShortenedLink from "./SingleShortenedLink";
 
 const ShowShortenedLinks = () => {
-  const shortenedLinks: ShortenedLink[] = [
-    { originalLink: "test1", shortLink: "short test1" },
-    { originalLink: "test2", shortLink: "short test2" },
-    { originalLink: "test3", shortLink: "short test3" },
-  ];
+  const links: LinkGroup[] = useLinksStore((state) => state.links);
+
   return (
     <div className="flex flex-col gap-3">
-      {shortenedLinks.map((shortenedLink) => {
+      {links.map((shortenedLink) => {
         return (
           <SingleShortenedLink
             originalLink={shortenedLink.originalLink}

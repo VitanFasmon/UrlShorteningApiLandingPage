@@ -1,5 +1,5 @@
-type ShortenedLink = {
+type LinkGroup = {
   originalLink: string;
   shortLink: string;
 };
-export type { ShortenedLink };
+export type { LinkGroup };
