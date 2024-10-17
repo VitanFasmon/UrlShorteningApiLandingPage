@@ -2,18 +2,19 @@ interface ButtonProps {
   children?: React.ReactNode;
   onClick: () => void;
   bgColor: "primary" | "secondary" | "none";
+  className?: string;
 }
 
-const Button = ({ children, onClick, bgColor: color }: ButtonProps) => {
+const Button = ({ children, onClick, bgColor, className }: ButtonProps) => {
   return (
     <button
       className={`${
-        color === "primary"
+        bgColor === "primary"
           ? "bg-primary-cyan text-white"
-          : color === "secondary"
+          : bgColor === "secondary"
           ? "bg-primary-darkViolet text-white"
           : " text-neutral-grayishViolet hover:text-primary-darkViolet transition-colors duration-300"
-      }  py-2 px-4 hover:bg-opacity-50 transition-colors duration-300 font-bold rounded`}
+      } ${className} py-2 px-4 hover:bg-opacity-50 transition-colors duration-300 font-bold rounded`}
       onClick={onClick}
     >
       {children}

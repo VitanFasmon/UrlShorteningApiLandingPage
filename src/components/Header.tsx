@@ -3,7 +3,7 @@ import Link from "./Link";
 const Header = () => {
   const handleGetStartedOnClick = () => {};
   return (
-    <header className="flex justify-between items-center md:flex-row flex-col-reverse gap-8 md:gap-0">
+    <header className="flex justify-between items-center md:flex-row flex-col-reverse gap-8 md:gap-0 mb-8">
       <div className="flex flex-col gap-8 items-center md:items-start md:px-24 px-8">
         <div className="flex flex-col gap-4  text-center md:text-start ">
           <h1 className="text-5xl font-bold text-primary-darkViolet font-poppins">

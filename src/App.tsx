@@ -1,14 +1,14 @@
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
-import LinkShortenForm from "./components/LinkShortenForm";
+import Hero from "./components/Hero";
 
 function App() {
   return (
     <div className="App">
       <Navbar />
       <Header />
-      <LinkShortenForm />
+      <Hero />
     </div>
   );
 }

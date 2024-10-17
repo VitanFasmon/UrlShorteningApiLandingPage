@@ -5,12 +5,6 @@ import hamburgerIcon from "../assets/icons/hamburger.png";
 import Link from "./Link";
 const Navbar = () => {
   const [hamburgerActive, setHamburgerActive] = useState(false);
-  const handleLoginOnClick = () => {
-    console.log("Login button clicked");
-  };
-  const handleSignUpOnClick = () => {
-    console.log("Sign up button clicked");
-  };
   const isMobile = useIsMobile();
 
   const handleHamburgerOnClick = () => {
