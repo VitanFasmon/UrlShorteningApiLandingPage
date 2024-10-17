@@ -3,9 +3,10 @@ interface ButtonProps {
   href: string;
   bgColor: "primary" | "secondary" | "none";
   color?: "white";
+  className?: string;
 }
 
-const Link = ({ children, href, bgColor, color }: ButtonProps) => {
+const Link = ({ children, href, bgColor, color, className }: ButtonProps) => {
   return (
     <a
       className={`${
@@ -14,7 +15,7 @@ const Link = ({ children, href, bgColor, color }: ButtonProps) => {
           : bgColor === "secondary"
           ? "bg-primary-darkViolet text-white"
           : " text-neutral-grayishViolet hover:text-primary-darkViolet transition-colors duration-300"
-      } ${`rounded-full py-2 px-4 hover:bg-opacity-50 transition-colors duration-300 font-bold`} ${
+      }  ${className}  ${`rounded-full py-2 px-4 hover:bg-opacity-50 transition-colors duration-300 font-bold`} ${
         color === "white" &&
         "text-white hover:text-neutral-grayishViolet text-center"
       }`}

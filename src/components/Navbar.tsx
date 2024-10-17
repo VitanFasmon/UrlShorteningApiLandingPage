@@ -3,6 +3,7 @@ import logoIcon from "../assets/icons/logo.svg";
 import useIsMobile from "../hooks/useIsMobile";
 import hamburgerIcon from "../assets/icons/hamburger.png";
 import Link from "./Link";
+import LogoComponent from "../assets/icons/LogoComponent";
 const Navbar = () => {
   const [hamburgerActive, setHamburgerActive] = useState(false);
   const isMobile = useIsMobile();
@@ -15,7 +16,7 @@ const Navbar = () => {
     <section className="flex flex-col items-center px-8 ">
       <div className="flex justify-between items-center md:px-16 py-10 w-full">
         <nav className="flex gap-8 items-center">
-          <img src={logoIcon} alt="Shortly logo" />
+          <LogoComponent className="text-primary-darkViolet" />
           {!isMobile && (
             <ul className="flex">
               <li>
