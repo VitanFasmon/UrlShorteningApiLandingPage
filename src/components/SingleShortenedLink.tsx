@@ -28,7 +28,7 @@ const SingleShortenedLink = ({
   };
 
   return (
-    <div className="w-full flex flex-col md:flex-row justify-between bg-white py-2 px-4 rounded md:items-center">
+    <div className="w-full flex flex-col md:flex-row justify-between bg-white py-2 px-4 rounded md:items-center  hover:shadow-lg transition-shadow duration-300">
       <p className="font-poppins md:border-none border-b border-neutral-lightGrayishViolet py-2">
         {truncateLink(originalLink, 30)}{" "}
       </p>

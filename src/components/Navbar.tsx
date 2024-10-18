@@ -16,7 +16,9 @@ const Navbar = () => {
     <section className="flex flex-col items-center px-8 ">
       <div className="flex justify-between items-center md:px-16 py-10 w-full">
         <nav className="flex gap-8 items-center">
-          <LogoComponent className="text-primary-darkViolet" />
+          <a href="/">
+            <LogoComponent className="text-primary-darkViolet" />
+          </a>
           {!isMobile && (
             <ul className="flex">
               <li>

@@ -7,8 +7,10 @@ import iconTwitter from "../assets/icons/icon-twitter.svg";
 const Footer = () => {
   return (
     <footer className="flex flex-col md:flex-row bg-neutral-veryDarkViolet justify-evenly">
-      <div className="flex justify-center p-8 text-white">
-        <LogoComponent />
+      <div className="flex justify-center p-8">
+        <a href="/">
+          <LogoComponent className="text-white" />
+        </a>
       </div>
       <div className="flex flex-col md:flex-row  items-center md:items-start">
         <div className="flex flex-col gap-8 p-8  items-center md:items-start">

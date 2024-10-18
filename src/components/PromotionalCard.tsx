@@ -12,7 +12,7 @@ const PromotionalCard = ({
 }: PromotionalCardProps) => {
   return (
     <div
-      className={` bg-white  rounded-lg shadow-lg ${className} min-w-min max-w-[400px]`}
+      className={` bg-white  rounded-lg shadow-lg ${className} min-w-min max-w-[400px] hover:shadow-2xl transition-shadow duration-300`}
     >
       <div className="rounded-full w-20 h-20 bg-primary-darkViolet flex items-center justify-center relative -top-10 left-1/2 transform -translate-x-1/2  lg:left-20">
         <img src={iconUrl} alt="Card image" />

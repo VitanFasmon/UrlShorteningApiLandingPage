@@ -6,7 +6,7 @@ interface ShortenURLResponse {
 export const urlShortenerService = async (longUrl: string): Promise<string> => {
   const apiUrl =
     "https://cors-anywhere.herokuapp.com/https://cleanuri.com/api/v1/shorten";
-
+  //Request temporary access to the demo server here: https://cors-anywhere.herokuapp.com/corsdemo
   const urlPattern = new RegExp(
     "^(https?:\\/\\/)?" +
       "((([a-zA-Z0-9$_.+!*'(),;?&=-]|%[0-9a-fA-F]{2})+:)?" +
