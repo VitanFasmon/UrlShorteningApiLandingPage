@@ -12,7 +12,6 @@ const SingleShortenedLink = ({
 }: SingleShortenedLinkProps) => {
   const [isLinkCopied, setIsLinkCopied] = useState(false);
 
-  // Function to handle truncating the original link
   const truncateLink = (link: string, maxLength: number) => {
     if (link.length > maxLength) {
       return link.substring(0, maxLength) + "...";
