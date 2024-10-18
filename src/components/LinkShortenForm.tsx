@@ -8,6 +8,8 @@ import { useState } from "react";
 import { saveLinksToLocalStorage } from "../utils/localStorageService";
 const LinkShortenForm = () => {
   const [inputLink, setInputLink] = useState("");
+  const [isError, setIsError] = useState(false);
+  const [errorText, setErrorText] = useState("");
   const { addLink, links } = useLinksStore();
   async function shortenMyURL(longUrl: string) {
     try {
@@ -15,11 +17,19 @@ const LinkShortenForm = () => {
       addLink({ originalLink: longUrl, shortLink: shortUrl });
       setInputLink("");
       saveLinksToLocalStorage();
+      setIsError(false);
     } catch (error) {
+      if (inputLink === "") {
+        setIsError(true);
+        setErrorText(`Error: Please enter a link`);
+        return;
+      }
       if (error instanceof Error) {
-        throw new Error(`Error: ${error.message}`);
+        setIsError(true);
+        setErrorText(`Error: ${error.message}`);
       } else {
-        throw new Error(`An unknown error occurred`);
+        setIsError(true);
+        setErrorText(`An unknown error occurred`);
       }
     }
   }
@@ -46,8 +56,12 @@ const LinkShortenForm = () => {
             onChange={(e) => setInputLink(e.target.value)}
             placeholder="Shorten a link here..."
             aria-label="Shorten a link here..."
-            className="md:w-[500px] w-full px-4 py-2 text-neutral-grayishViolet bg-neutral-veryLightGrayishViolet rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-cyan"
+            required
+            className={`${
+              isError && "border-2 border-red-500"
+            } md:w-[500px] w-full px-4 py-2 text-neutral-grayishViolet bg-neutral-veryLightGrayishViolet rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-cyan`}
           />
+          {isError && <p className="text-red-500">{errorText}</p>}
         </div>
         <Button
           bgColor="primary"

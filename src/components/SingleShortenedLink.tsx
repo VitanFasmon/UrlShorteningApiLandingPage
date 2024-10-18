@@ -33,9 +33,11 @@ const SingleShortenedLink = ({
         {truncateLink(originalLink, 30)}{" "}
       </p>
       <div className="flex flex-col md:flex-row gap-2  md:items-center md:w-fit w-full py-2">
-        <p className="font-poppins text-primary-cyan ">
-          {truncateLink(shortLink, 30)}{" "}
-        </p>
+        <a href={shortLink} target="blank">
+          <p className="font-poppins text-primary-cyan ">
+            {truncateLink(shortLink, 30)}{" "}
+          </p>
+        </a>
         <Button
           onClick={() => {
             handleOnClick();
