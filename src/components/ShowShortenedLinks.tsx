@@ -1,11 +1,13 @@
 import { useEffect } from "react";
 import useLinksStore from "../store/useLinksStore";
-import { LinkGroup } from "../types/shortenedLink";
 import SingleShortenedLink from "./SingleShortenedLink";
 import { setLinksFromLocalStorage } from "../utils/localStorageService";
 const ShowShortenedLinks = () => {
-  const links: LinkGroup[] = useLinksStore((state) => state.links);
+  const { links } = useLinksStore();
   useEffect(() => {}, [links]);
+  useEffect(() => {
+    setLinksFromLocalStorage();
+  }, []);
   return (
     <div className="flex flex-col gap-3">
       {links.map((shortenedLink) => {

@@ -5,16 +5,16 @@ import useIsMobile from "../hooks/useIsMobile";
 import { urlShortenerService } from "../data/urlShortenerService";
 import useLinksStore from "../store/useLinksStore";
 import { useState } from "react";
-import { saveToLocalStorage } from "../utils/localStorageService";
+import { saveLinksToLocalStorage } from "../utils/localStorageService";
 const LinkShortenForm = () => {
   const [inputLink, setInputLink] = useState("");
-  const addLink = useLinksStore((state) => state.addLink);
+  const { addLink, links } = useLinksStore();
   async function shortenMyURL(longUrl: string) {
     try {
       const shortUrl = await urlShortenerService(longUrl);
       addLink({ originalLink: longUrl, shortLink: shortUrl });
       setInputLink("");
-      saveToLocalStorage();
+      saveLinksToLocalStorage();
     } catch (error) {
       if (error instanceof Error) {
         throw new Error(`Error: ${error.message}`);

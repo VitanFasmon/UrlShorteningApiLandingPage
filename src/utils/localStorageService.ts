@@ -1,7 +1,7 @@
 import useLinksStore from "../store/useLinksStore";
 import { LinkGroup } from "../types/shortenedLink";
-const { links, setLinks } = useLinksStore.getState();
-const saveToLocalStorage = () => {
+const saveLinksToLocalStorage = () => {
+  const { links } = useLinksStore.getState();
   localStorage.setItem("links", JSON.stringify(links));
 };
 const getFromLocalStorage = (): LinkGroup[] => {
@@ -9,7 +9,12 @@ const getFromLocalStorage = (): LinkGroup[] => {
   return links;
 };
 const setLinksFromLocalStorage = () => {
+  const { setLinks } = useLinksStore.getState();
   setLinks(getFromLocalStorage());
 };
 
-export { saveToLocalStorage, getFromLocalStorage, setLinksFromLocalStorage };
+export {
+  saveLinksToLocalStorage,
+  getFromLocalStorage,
+  setLinksFromLocalStorage,
+};
