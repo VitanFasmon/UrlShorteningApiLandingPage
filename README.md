@@ -1,46 +1,57 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Link Shortener
 
-## Available Scripts
+A URL shortening application built with **React**, **TypeScript**, and **Zustand** for state management. This app allows users to input long URLs and get shortened versions. It also saves the URLs in local storage and retrieves them when needed.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **URL Shortening**: Users can enter a URL, and the app will generate a shortened version using an external API.
+- **Local Storage**: All shortened URLs are saved in the browser's local storage, so they persist across sessions.
+- **Responsive Design**: The app adapts to mobile and desktop screen sizes using conditionally loaded assets.
+- **State Management**: Uses **Zustand** for managing and updating the list of shortened URLs.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Technologies Used
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- **React**: For building the UI components.
+- **TypeScript**: To provide type safety and development efficiency.
+- **Zustand**: Lightweight state management for managing the list of shortened links.
+- **Local Storage**: For persisting shortened URLs across sessions.
+- **Tailwind CSS**: For styling and creating responsive layouts.
+- **URL Shortener API**: `cleanuri.com` to generate shortened links.
 
-### `npm test`
+## Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/VitanFasmon/UrlShorteningApiLandingPage.git
+   cd UrlShorteningApiLandingPage
+   ```
 
-### `npm run build`
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. **Run the development server**:
+   ```bash
+   npm start
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   The app will run locally at `http://localhost:3000`.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Usage
 
-### `npm run eject`
+### Shortening a Link
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+1. **Enter a URL**: On the main page, enter a valid URL in the input field.
+2. **Click 'Shorten It!'**: This triggers the API to shorten the URL.
+3. **View Shortened Links**: After shortening, the URL is displayed below the input form, and the original and shortened links are stored locally.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Persisting Shortened Links
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- The app saves all shortened URLs in the browser's **local storage**.
+- When you reload the page, it will automatically load previously saved URLs using `setLinksFromLocalStorage()`.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## License
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
