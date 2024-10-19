@@ -39,6 +39,34 @@ A URL shortening application built with **React**, **TypeScript**, and **Zustand
 
    The app will run locally at `http://localhost:3000`.
 
+
+# IMPORTANT! CORS Anywhere Setup
+
+## Why use CORS Anywhere?
+
+This project relies on the CORS Anywhere service to bypass the CORS policy restrictions when making API requests to third-party services like the CleanURI API. Since the CleanURI API does not include the required `Access-Control-Allow-Origin` header, we use the CORS Anywhere proxy to allow requests from the browser.
+
+Without this, you might encounter an error like:
+
+```javascript
+Error: Error: Unexpected token 'S', "See /corsd"... is not valid JSON
+```
+
+This error happens because the browser blocks the response from the CleanURI API due to the CORS policy, and a partial message is returned.
+
+## How to Request Access to CORS Anywhere
+
+Before using the app locally, you must go to the CORS Anywhere demo server and request temporary access:
+
+1. Visit the following URL:  
+   [https://cors-anywhere.herokuapp.com/corsdemo](https://cors-anywhere.herokuapp.com/corsdemo)
+
+2. Click on the **"Request temporary access to the demo server"** button.
+
+3. Once access is granted, the app will be able to make API requests via the proxy.
+
+If you skip this step, the app will fail to shorten URLs due to the CORS policy restrictions.
+
 ## Usage
 
 ### Shortening a Link
