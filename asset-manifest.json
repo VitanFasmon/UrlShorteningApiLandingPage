@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/VitanFasmon/UrlShorteningApiLandingPage/static/css/main.ef0a8e78.css",
+    "main.js": "/VitanFasmon/UrlShorteningApiLandingPage/static/js/main.8844ae5c.js",
+    "static/js/453.11e254b0.chunk.js": "/VitanFasmon/UrlShorteningApiLandingPage/static/js/453.11e254b0.chunk.js",
+    "static/media/illustration-working.svg": "/VitanFasmon/UrlShorteningApiLandingPage/static/media/illustration-working.c9b5ef5452363d8be3df709375d50bd0.svg",
+    "static/media/icon-fully-customizable.svg": "/VitanFasmon/UrlShorteningApiLandingPage/static/media/icon-fully-customizable.a1532a74fa781f6fde327313bd5ffce3.svg",
+    "static/media/icon-brand-recognition.svg": "/VitanFasmon/UrlShorteningApiLandingPage/static/media/icon-brand-recognition.c349d3b69f7442e5ac3552e4138e72e7.svg",
+    "static/media/bg-boost-desktop.svg": "/VitanFasmon/UrlShorteningApiLandingPage/static/media/bg-boost-desktop.772154c9b0e451733f5ef5a737ffe720.svg",
+    "static/media/icon-detailed-records.svg": "/VitanFasmon/UrlShorteningApiLandingPage/static/media/icon-detailed-records.265c8aea77b546e08ba3575f6a8a9f70.svg",
+    "static/media/icon-instagram.svg": "/VitanFasmon/UrlShorteningApiLandingPage/static/media/icon-instagram.df5873287e1c06a0fe74440f6ccd8394.svg",
+    "index.html": "/VitanFasmon/UrlShorteningApiLandingPage/index.html",
+    "static/media/icon-pinterest.svg": "/VitanFasmon/UrlShorteningApiLandingPage/static/media/icon-pinterest.a2d25ab4c70b78c4028f25323009cc58.svg",
+    "static/media/bg-boost-mobile.svg": "/VitanFasmon/UrlShorteningApiLandingPage/static/media/bg-boost-mobile.4b04bd89ea775da3deff8991b15aff8c.svg",
+    "static/media/bg-shorten-desktop.svg": "/VitanFasmon/UrlShorteningApiLandingPage/static/media/bg-shorten-desktop.0d9742f433f4b0d8752b40ccf28727af.svg",
+    "static/media/icon-twitter.svg": "/VitanFasmon/UrlShorteningApiLandingPage/static/media/icon-twitter.1d5c6d5e6ab1717a500af2df0a87959a.svg",
+    "static/media/icon-facebook.svg": "/VitanFasmon/UrlShorteningApiLandingPage/static/media/icon-facebook.229c75a01827343aef31ae916e2ec18a.svg",
+    "static/media/bg-shorten-mobile.svg": "/VitanFasmon/UrlShorteningApiLandingPage/static/media/bg-shorten-mobile.41c34b33a14a3077e506acb101113013.svg",
+    "main.ef0a8e78.css.map": "/VitanFasmon/UrlShorteningApiLandingPage/static/css/main.ef0a8e78.css.map",
+    "main.8844ae5c.js.map": "/VitanFasmon/UrlShorteningApiLandingPage/static/js/main.8844ae5c.js.map",
+    "453.11e254b0.chunk.js.map": "/VitanFasmon/UrlShorteningApiLandingPage/static/js/453.11e254b0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ef0a8e78.css",
+    "static/js/main.8844ae5c.js"
+  ]
+}
