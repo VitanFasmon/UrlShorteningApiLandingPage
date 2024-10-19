@@ -6,7 +6,7 @@ import iconPinterest from "../assets/icons/icon-pinterest.svg";
 import iconTwitter from "../assets/icons/icon-twitter.svg";
 const Footer = () => {
   return (
-    <footer className="flex flex-col md:flex-row bg-neutral-veryDarkViolet justify-evenly">
+    <footer className="flex flex-col lg:flex-row bg-neutral-veryDarkViolet justify-evenly items-center lg:items-start">
       <div className="flex justify-center p-8">
         <a href="/">
           <LogoComponent className="text-white" />
